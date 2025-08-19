@@ -27,6 +27,20 @@ pip install -r requirements.txt
 python bot.py
 ```
 
+# Docker Usage
+
+To build and run the bot in Docker:
+
+```sh
+# Build the image
+docker build -t decodo-stats-bot .
+
+# Run the container (pass .env file if needed)
+docker run --env-file .env decodo-stats-bot
+```
+
+You can also set environment variables directly in your deployment environment.
+
 ## Notes
 - aiogram docs: https://docs.aiogram.dev/en/latest/
 - Decodo Public API calls:
